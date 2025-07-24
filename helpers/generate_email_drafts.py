@@ -14,6 +14,10 @@ def generate_email_drafts(companies_to_generate, backup_dict, backup_file):
 
     Visit the website of the company, see what they do and tailor the mail accordingly.
 
+    Navigate to the about us section in the company's website if it exists, in order to gather more information about the company.
+
+    In the mail wrtie a few sentences in a way such that the mail gives a personal touch (you can do this using the information gained through the company website and the about us page).
+
     In the salutation, just put "Hello," and nothing else.
     
     Mention that I have frontend web development experience with React, JS, and TS and research experience in neural networks, and would love to work for their organization. 

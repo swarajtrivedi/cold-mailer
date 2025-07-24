@@ -60,7 +60,7 @@ def send_emails_batch(df, backup_dict, sent_emails, sent_emails_path, resume_pat
             sent_emails.add(email_id)
             save_sent_emails(sent_emails, sent_emails_path)
 
-            wait_time = random.randint(120, 300)
+            wait_time = random.randint(900, 1200)
             print(f"⏳ Waiting {wait_time} seconds before next email...\n")
             time.sleep(wait_time)
         else:
