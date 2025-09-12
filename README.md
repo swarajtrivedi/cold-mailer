@@ -19,27 +19,39 @@ Built to help job seekers like me scale outreach without sacrificing quality. Ju
 
 ---
 
-## 📦 Folder Setup
+## 🧭 Setup
+1) **Place your contacts file**
+   - Create a folder named `resources/`
+   - Put `contacts.csv` inside it (format shown below)
 
-Make sure your project root contains:
+2) **Add your resume**
+   - Create a folder named `attachments/`
+   - Put your resume PDF inside it (e.g., `attachments/your_resume.pdf`)
 
-- `resources/contacts.csv` → Your list of companies (see format below)
-- `attachments/your_resume.pdf` → Your resume file
-
+3) **Create 3 environment variables**
+   - In a `.env` file at the project root, add:
+     ```env
+     OPENAI_API_KEY=your_openai_api_key
+     SENDER_EMAIL=your_email@gmail.com
+     EMAIL_APP_PASSWORD=your_gmail_app_password
+     ```
+   - **How to generate a Gmail App Password:**
+     1. Go to https://myaccount.google.com/security  
+     2. Turn on **2-Step Verification** (if not already)
+     3. Under **“Signing in to Google”**, open **App passwords**
+     4. Choose **App: Mail**, **Device: Other** (e.g., “AutoMailer”), then **Generate**
+     5. Copy the **16-character** password and use it as `EMAIL_APP_PASSWORD` in your `.env`
+        
 ---
 
-## 🧾 contacts.csv Format
+## 📄 `contacts.csv` (place in `resources/`)
+Required columns (case-sensitive):
 
-Your `contacts.csv` inside the `resources/` folder **must contain** the following columns:
-
-| Column    | Description                             |
-|-----------|-----------------------------------------|
-| Email     | Email address of the company contact     |
-| Company   | Name of the company                      |
-| Website   | Official company website (used for GPT)  |
+| Email | Company | Website |
+|------|---------|---------|
+| hr@startupx.com | Startup X | https://startupx.com |
 
 Example:
-
 ```csv
 Email,Company,Website
 hr@startupx.com,Startup X,https://startupx.com
