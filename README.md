@@ -28,13 +28,13 @@ Built to help job seekers like me scale outreach without sacrificing quality. Ju
    - Create a folder named `attachments/`
    - Put your resume PDF inside it (e.g., `attachments/your_resume.pdf`)
 
-3) **Create 3 environment variables**
-   - In a `.env` file at the project root, add:
-     ```env
-     OPENAI_API_KEY=your_openai_api_key
-     SENDER_EMAIL=your_email@gmail.com
-     EMAIL_APP_PASSWORD=your_gmail_app_password
-     ```
+3) **Set environment variables (macOS/Linux – bash/zsh)**
+   ```bash
+   export SENDER_EMAIL="your_email@gmail.com"
+   export EMAIL_APP_PASSWORD="your_gmail_app_password"
+   export RESUME_FILENAME="your_resume.pdf"
+   ```
+   
    - **How to generate a Gmail App Password:**
      1. Go to https://myaccount.google.com/security  
      2. Turn on **2-Step Verification** (if not already)
