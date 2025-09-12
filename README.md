@@ -42,6 +42,22 @@ Built to help job seekers like me scale outreach without sacrificing quality. Ju
      4. Choose **App: Mail**, **Device: Other** (e.g., “AutoMailer”), then **Generate**
      5. Copy the **16-character** password and use it as `EMAIL_APP_PASSWORD` in your `.env`
         
+ 4) **Install dependenciess**
+
+    Make sure the following dependencies are installed- openai, pandas
+
+    ```bash
+    python3 -m pip install --upgrade pip
+    python3 -m pip install openai pandas
+    ```
+    
+   
+        
+ 4) **Running the script**
+    ```bash
+    python3 mail_script.py
+    ```
+        
 ---
 
 ## 📄 `contacts.csv` (place in `resources/`)
